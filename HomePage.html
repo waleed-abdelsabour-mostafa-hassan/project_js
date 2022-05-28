@@ -1,0 +1,950 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Home Page</title>
+   
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/3ddfc50abb.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:ital,wght@0,700;0,800;0,900;1,600;1,700;1,800;1,900&family=Radio+Canada:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--   Bootstrap -->
+    <link rel="stylesheet" href="css/vendors/bootstrap.min.css" />
+    <!--   Font -->
+    <link rel="stylesheet" href="css/vendors/font-awesome.css" />
+    <!--   Slick -->
+    <link rel="stylesheet" href="css/vendors/slick.css" />
+    <link rel="stylesheet" href="css/style2.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/styleForm.css" />
+    <link rel="stylesheet" href="css/styleHeader.css" />
+  </head>
+  <body>
+    <section id="section-1">
+      <div id="img-color">
+        <header>
+          <div id="center-header">
+            <div class="whiteTxt-Center" id="logo">Booking.com</div>
+            <div id="right-header">
+              <div class="whiteTxt-Center" id="icon3-container">
+                <div class="icon3-box" id="qus-mark">?</div>
+                <div class="icon3-box" id="us-flag">
+                  <img src="img/usaFlag.png" alt="" />
+                </div>
+
+                <div class="icon3-box" id="egy">EGP</div>
+              </div>
+              <div id="button3-container">
+                <input
+                  type="button"
+                  class="whiteTxt-Center btn3"
+                  id="list-btn"
+                  value="List your property"
+                />
+                <input
+                  type="button"
+                  class="whiteTxt-Center btn3-email btn3"
+                  value="Hello "
+                />
+                <input
+                  onclick="ClickSignOut()"
+                  type="button"
+                  class="whiteTxt-Center btn3"
+                  value="Sign out"
+                />
+              </div>
+            </div>
+          </div>
+        </header>
+        <div id="mainMenu-Container">
+          <ul id="center-MainMenu">
+            <button id="Stays-btn" class="whiteTxt-Center btn3-header">
+              <img class="icon bedIcon" src="img/bed.png" alt="" /> Stays
+            </button>
+            <button class="whiteTxt-Center F-btn btn3-header">
+              <i class="fa-solid fa-plane-departure"></i> Flights
+            </button>
+            <button class="whiteTxt-Center btn3-header">
+              <i class="fa-solid fa-car"></i> Car rentals
+            </button>
+            <button class="whiteTxt-Center btn3-header">
+              <img class="icon atterIcon" src="img/atter.png" alt="" />
+              Attractions
+            </button>
+            <button class="whiteTxt-Center taxi-btn btn3-header">
+              <img class="icon atterIcon" src="img/taxi.png" alt="" />
+              Airport taxis
+            </button>
+          </ul>
+        </div>
+        <div id="title-description-container">
+          <h1 class="whiteTxt-Center title-lifetime">
+            A lifetime of discounts? It's Genius.
+          </h1>
+          <span class="whiteTxt-Center description-rewarded">
+            Get rewarded for your travels – unlock instant savings of 10% or
+            more with a free Booking.com account
+          </span>
+          <input type="button" value="Sign in / Register" id="siReg-btn" />
+        </div>
+        <!-- ============================================= -->
+        <div id="center-formContainer">
+          <div id="form-container">
+            <input
+              onclick="onSearch()"
+              class="serh-btn"
+              type="button"
+              value="Search"
+            />
+            <div class="dropdown">
+              <button onclick="showGovernment()" class="dropbtn">
+                Where are you going ?
+              </button>
+              <div onmouseleave="hideGovernment()" class="dropdown-content">
+                <a
+                  onclick="getGvernment(this)"
+                  class="l1"
+                  id="aText-DropDown"
+                  href="#"
+                  ><img
+                    class="icon"
+                    src="img/location-dot-solid.svg"
+                    alt=""
+                  />Hurghada</a
+                >
+                <a onclick="getGvernment(this)" id="aText-DropDown" href="#">
+                  <img
+                    class="icon"
+                    src="img/location-dot-solid.svg"
+                  />Alexandria</a
+                >
+                <a
+                  onclick="getGvernment(this)"
+                  class="l3"
+                  id="aText-DropDown"
+                  href="#"
+                  ><img class="icon" src="img/location-dot-solid.svg" />Dahab</a
+                ><a
+                  onclick="getGvernment(this)"
+                  class="l4"
+                  id="aText-DropDown"
+                  href="#"
+                  ><img class="icon" src="img/location-dot-solid.svg" />Sharm
+                  El-Shaikh</a
+                ><a
+                  onclick="getGvernment(this)"
+                  class="l5"
+                  id="aText-DropDown"
+                  href="#"
+                  ><img class="icon" src="img/location-dot-solid.svg" />Ain
+                  Sokhna</a
+                ><a
+                  onclick="getGvernment(this)"
+                  class="l6"
+                  id="aText-DropDown"
+                  href="#"
+                  ><img class="icon" src="img/location-dot-solid.svg" />Cairo</a
+                >
+              </div>
+            </div>
+
+            <input name="check-out" class="date date1" type="date" />
+            <label class="check" for="check-out">check out :</label>
+
+            <input name="check-in" class="date" type="date" />
+            <label class="check" for="check-in">check in :</label>
+
+            <button onclick="personnumON()" class="personNum-btn">
+              1 Adult . 1 Chaild . 1 Room
+            </button>
+            <!-- ----------- -->
+            <div onmouseleave="personnumOUT()" class="container-numberPR">
+              <div class="row-numPR">
+                <p>Adult</p>
+                <button onclick="minusForAdult()" class="btn-numPR">-</button>
+                <p class="textAdult">1</p>
+
+                <button onclick="plusForAdult()" class="btn-numPR">+</button>
+              </div>
+              <!-- ------------------------------------------------- -->
+              <div class="row-numPR">
+                <div>
+                  <div id="p-PR">Chaild</div>
+                  <div id="pp-PR">Ages 0-17</div>
+                </div>
+                <!-- //// -->
+                <button onclick="minusForChaild()" class="btn-numPR">-</button>
+                <p class="textChaild">1</p>
+                <button onclick="plusForChaild()" class="btn-numPR">+</button>
+                <!-- //// -->
+              </div>
+              <!-- ------------------------------------------------- -->
+
+              <div class="row-numPR">
+                <p>Room</p>
+                <!-- //// -->
+
+                <button onclick="minusForRoom()" class="btn-numPR">-</button>
+                <p class="textRoom">1</p>
+                <button onclick="plusForRoom()" class="btn-numPR">+</button>
+                <!-- //// -->
+              </div>
+              <!-- ------------------------------------------------- -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-2">
+      <!-------------------------slider 1 property type-------------->
+      <div class="controller">
+        <div>
+          <h2>Browse by property type</h2>
+        </div>
+      </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slider-box">
+              <div class="img-box">
+                <img src="img/Hostels.jpg" />
+              </div>
+              <p class="detail">
+                Hostels
+                <br />
+                <a href="#" class="name">10 Hostels</a>
+              </p>
+              <div class="learn">
+                <a href="Page3.html">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slider-box">
+              <div class="img-box">
+                <img src="img/Apartments.jpg" />
+              </div>
+              <p class="detail">
+                Apartments
+                <br />
+                <a href="#" class="name">12 Apartments</a>
+              </p>
+              <div class="learn">
+                <a href="Page3.html">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slider-box">
+              <div class="img-box">
+                <img src="img/B&Bs.jpg" />
+              </div>
+              <p class="detail">
+                B&Bs
+                <br />
+                <a href="#" class="name">5 B&Bs</a>
+              </p>
+              <div class="learn">
+                <a href="Page3.html">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slider-box">
+              <div class="img-box">
+                <img src="img/Hostels.jpg" />
+              </div>
+              <p class="detail">
+                Cottages
+                <br />
+                <a href="#" class="name">20 Cottages</a>
+              </p>
+              <div class="learn">
+                <a href="Page3.html">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slider-box">
+              <div class="img-box">
+                <img src="img/glamping.jpg" />
+              </div>
+              <p class="detail">
+                glamping
+                <br />
+                <a href="#" class="name">14 glamping</a>
+              </p>
+              <div class="learn">
+                <a href="Page3.html">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slider-box">
+              <div class="img-box">
+                <img src="img/Guest houses.jpg" />
+              </div>
+              <p class="detail">
+                Guest houses
+                <br />
+                <a href="#" class="name">5 Guest houses</a>
+              </p>
+              <div class="learn">
+                <a href="Page3.html">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slider-box">
+              <div class="img-box">
+                <img src="img/Riads.jpg" />
+              </div>
+              <p class="detail">
+                Riads
+                <br />
+                <a href="#" class="name">15 Riads</a>
+              </p>
+              <div class="learn">
+                <a href="Page3.html">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slider-box">
+              <div class="img-box">
+                <img src="img/Resorts.jpg" />
+              </div>
+              <p class="detail">
+                Resorts
+                <br />
+                <a href="#" class="name">23 Resorts</a>
+              </p>
+              <div class="learn">
+                <a href="Page3.html">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slider-box">
+              <div class="img-box">
+                <img src="img/Serviced Apartments.jpg" />
+              </div>
+              <p class="detail">
+                Serviced Apartments
+                <br />
+                <a href="#" class="name">11 Serviced Apartments</a>
+              </p>
+              <div class="learn">
+                <a href="Page3.html">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <!--swiper slider1 end-->
+
+      <!--------------slider 2 Explore Egypt--------------------------------->
+
+      <div class="controller">
+        <div>
+          <h2>Explore Egypt</h2>
+          <p>These popular destinations have a lot to offer</p>
+        </div>
+      </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slider-box">
+              <div class="img-box">
+                <img src="img/Hurghada.webp" />
+              </div>
+              <p class="detail">
+                <br />
+                Hurghada
+              </p>
+              <div class="learn">
+                <a href="Page3.html">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slider-box">
+              <div class="img-box">
+                <img src="img/ain sokhna.webp" />
+              </div>
+              <p class="detail">
+                <br />
+                Ain Sokhna
+              </p>
+              <div class="learn">
+                <a href="Page3.html">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slider-box">
+              <div class="img-box">
+                <img src="img/Ras sedr.webp" />
+              </div>
+              <p class="detail">
+                <br />
+                Ras Sedr
+              </p>
+              <div class="learn">
+                <a href="Page3.html">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slider-box">
+              <div class="img-box">
+                <img src="img/alex.webp" />
+              </div>
+              <p class="detail">
+                <br />
+                Alexandria
+              </p>
+              <div class="learn">
+                <a href="Page3.html">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slider-box">
+              <div class="img-box">
+                <img src="img/Marsa MAtruh.webp" />
+              </div>
+              <p class="detail">
+                <br />
+                Marsa Matruh
+              </p>
+              <div class="learn">
+                <a href="Page3.html">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slider-box">
+              <div class="img-box">
+                <img src="img/Marsa Alam.webp" />
+              </div>
+              <p class="detail">
+                <br />
+                Marsa Alam
+              </p>
+              <div class="learn">
+                <a href="Page3.html">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slider-box">
+              <div class="img-box">
+                <img src="img/dahab.webp" />
+              </div>
+              <p class="detail">
+                <br />
+                Dahab
+              </p>
+              <div class="learn">
+                <a href="Page3.html">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slider-box">
+              <div class="img-box">
+                <img src="img/cairo.webp" />
+              </div>
+              <p class="detail">
+                <br />
+                Cairo
+              </p>
+              <div class="learn">
+                <a href="Page3.html">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slider-box">
+              <div class="img-box">
+                <img src="img/north Coast.webp" />
+              </div>
+              <p class="detail">
+                <br />
+                North Coast
+              </p>
+              <div class="learn">
+                <a href="Page3.html">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- //////////////////////////////////////// -->
+    <div id="section-3">
+      <section class="choose">
+        <div class="container">
+          <img src="img/genuis.png" alt="" />
+          <div class="part">
+            <h2>Get instant discounts</h2>
+            <p>
+              Simply sign into your Booking.com account and look for the <br />
+              blue Genius logo to save
+            </p>
+            <div class="btns">
+              <button class="btn1">Sign In</button>
+              <button class="btn2">Register</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="sections">
+        <div class="container">
+          <div class="row">
+            <h2 class="section_title">Destinations we love</h2>
+            <div class="buttons">
+              <button data-role="regions">Regions</button>
+              <button data-role="cities">Cities</button>
+              <button data-role="places">Places Of Interest</button>
+            </div>
+            <div class="Content">
+              <div class="content1" id="regions">
+                <div class="col-md-3 col-xs-12">
+                  <p>
+                    <b>Bihar</b> <br />
+                    761 properties
+                  </p>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                  <p>
+                    <b>Bora Bora </b> <br />
+                    59 properties
+                  </p>
+                </div>
+                <div class="col-md-2 col-xs-12">
+                  <p>
+                    <b>Tenerife </b> <br />
+                    9,622 properties
+                  </p>
+                </div>
+                <div class="col-md-2 col-xs-12">
+                  <p>
+                    <b>Mykonos </b> <br />
+                    1,454 properties
+                  </p>
+                </div>
+                <div class="col-md-2 col-xs-12">
+                  <p>
+                    <b>Uttar Pradesh </b> <br />
+                    4,374 properties
+                  </p>
+                </div>
+
+                <div class="col-md-3 col-xs-12">
+                  <p>
+                    Lake District <br />
+                    934 properties
+                  </p>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                  <p>
+                    <b>Texel </b> <br />
+                    934 properties
+                  </p>
+                </div>
+                <div class="col-md-2 col-xs-12">
+                  <p>
+                    <b>Cornwall </b> <br />
+                    934 properties
+                  </p>
+                </div>
+                <div class="col-md-2 col-xs-12">
+                  <p>
+                    <b>Zanzibar </b><br />
+                    934 properties
+                  </p>
+                </div>
+                <div class="col-md-2 col-xs-12">
+                  <p>
+                    <b>Guernsey </b><br />
+                    934 properties
+                  </p>
+                </div>
+
+                <div class="col-md-3 col-xs-12">
+                  <p>
+                    <b>Bali </b> <br />
+                    934 properties
+                  </p>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                  <p>
+                    <b>Phuket Province </b><br />
+                    934 properties
+                  </p>
+                </div>
+                <div class="col-md-2 col-xs-12">
+                  <p>
+                    <b>Santorini </b> <br />
+                    934 properties
+                  </p>
+                </div>
+                <div class="col-md-2 col-xs-12">
+                  <p>
+                    <b>Jersey </b> <br />
+                    4455 properties
+                  </p>
+                </div>
+                <div class="col-md-2 col-xs-12">
+                  <p>
+                    <b>Isle of Wight </b><br />
+                    934 properties
+                  </p>
+                </div>
+
+                <div class="col-md-3 col-xs-12">
+                  <p>
+                    <b>England </b> <br />
+                    934 properties
+                  </p>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                  <p>
+                    <b>Ras Al Khaimah </b> <br />
+                    934 properties
+                  </p>
+                </div>
+                <div class="col-md-2 col-xs-12">
+                  <p>
+                    <b>Ibiza </b> <br />
+                    934 properties
+                  </p>
+                </div>
+                <div class="col-md-2 col-xs-12">
+                  <p>
+                    <b>Hawaii </b> <br />
+                    934 properties
+                  </p>
+                </div>
+              </div>
+              <!-- --------------------------------------------------------->
+              <div class="content2" id="cities">
+                <div class="col-md-3 col-xs-12">
+                  <p>
+                    <b>Sofia, Bulgaria </b> <br />
+                    705 holiday rentals, 662 apartments, 45 homestays, 37 B&Bs,
+                    35 guest houses
+                  </p>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                  <p>
+                    <b>Brussels, Belgium </b> <br />
+                    438 vacation rentals, 334 apartments, 84 B&Bs, 45 homestays,
+                    31 guest houses
+                  </p>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                  <p>
+                    <b>Bangkok </b> <br />
+                    4041 hotels
+                  </p>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                  <p>
+                    <b>Glasgow </b> <br />
+                    918 hotels
+                  </p>
+                </div>
+
+                <div class="col-md-3 col-xs-12">
+                  <p>
+                    <b>Sofia, Bulgaria </b> <br />
+                    705 holiday rentals, 662 apartments, 45 homestays, 37 B&Bs,
+                    35 guest houses
+                  </p>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                  <p>
+                    <b>Sofia, Bulgaria </b> <br />
+                    705 holiday rentals, 662 apartments, 45 homestays, 37 B&Bs,
+                    35 guest houses
+                  </p>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                  <p>
+                    <b>Sofia, Bulgaria </b> <br />
+                    705 holiday rentals, 662 apartments, 45 homestays, 37 B&Bs,
+                    35 guest houses
+                  </p>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                  <p>
+                    <b>Sofia, Bulgaria </b> <br />
+                    705 holiday rentals, 662 apartments, 45 homestays, 37 B&Bs,
+                    35 guest houses
+                  </p>
+                </div>
+
+                <div class="col-md-3 col-xs-12">
+                  <p>
+                    <b>Sofia, Bulgaria </b> <br />
+                    705 holiday rentals, 662 apartments, 45 homestays, 37 B&Bs,
+                    35 guest houses
+                  </p>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                  <p>
+                    <b>Sofia, Bulgaria </b> <br />
+                    705 holiday rentals, 662 apartments, 45 homestays, 37 B&Bs,
+                    35 guest houses
+                  </p>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                  <p>
+                    <b>Sofia, Bulgaria </b> <br />
+                    705 holiday rentals, 662 apartments, 45 homestays, 37 B&Bs,
+                    35 guest houses
+                  </p>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                  <p>
+                    <b>Sofia, Bulgaria </b> <br />
+                    705 holiday rentals, 662 apartments, 45 homestays, 37 B&Bs,
+                    35 guest houses
+                  </p>
+                </div>
+
+                <div class="col-md-3 col-xs-12">
+                  <p>
+                    <b>Sofia, Bulgaria </b> <br />
+                    705 holiday rentals, 662 apartments, 45 homestays, 37 B&Bs,
+                    35 guest houses
+                  </p>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                  <p>
+                    <b>Sofia, Bulgaria </b> <br />
+                    705 holiday rentals, 662 apartments, 45 homestays, 37 B&Bs,
+                    35 guest houses
+                  </p>
+                </div>
+              </div>
+
+              <!-- ----------------------------------------->
+              <div class="content3" id="places">
+                <div class="col-md-3 col-xs-12">
+                  <p>
+                    <b>Heathrow Terminal 5</b> <br />
+                    766 properties
+                  </p>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                  <p>
+                    <b>O2 Arena </b> <br />
+                    875 properties
+                  </p>
+                </div>
+                <div class="col-md-2 col-xs-12">
+                  <p>
+                    <b>Wembley Stadium </b> <br />
+                    254 properties
+                  </p>
+                </div>
+                <div class="col-md-2 col-xs-12">
+                  <p>
+                    <b> Kalahari Waterpark </b> <br />
+                    444 properties
+                  </p>
+                </div>
+                <div class="col-md-2 col-xs-12">
+                  <p>
+                    <b>Niagara Falls State Park </b> <br />
+                    766 properties
+                  </p>
+                </div>
+
+                <div class="col-md-3 col-xs-12">
+                  <p>
+                    <b>Ocean City Boardwalk </b> <br />
+                    766 properties
+                  </p>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                  <p>
+                    <b>Ocean City Boardwalk </b> <br />
+                    766 properties
+                  </p>
+                </div>
+                <div class="col-md-2 col-xs-12">
+                  <p>
+                    <b>Disneylan </b> <br />
+                    766 properties
+                  </p>
+                </div>
+                <div class="col-md-2 col-xs-12">
+                  <p>
+                    <b>Ocean City Boardwalk </b> <br />
+                    766 properties
+                  </p>
+                </div>
+                <div class="col-md-2 col-xs-12">
+                  <p>
+                    <b>Universal Studios Orlando </b> <br />
+                    766 properties
+                  </p>
+                </div>
+
+                <div class="col-md-3 col-xs-12">
+                  <p>
+                    <b>Ocean City Boardwalk </b> <br />
+                    766 properties
+                  </p>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                  <p>
+                    <b>Al Maha Wildlife Reserve </b> <br />
+                    766 properties
+                  </p>
+                </div>
+                <div class="col-md-2 col-xs-12">
+                  <p>
+                    <b>Comal River Tubing </b> <br />
+                    766 properties
+                  </p>
+                </div>
+                <div class="col-md-2 col-xs-12">
+                  <p>
+                    <b>Ocean City Boardwalk </b> <br />
+                    766 properties
+                  </p>
+                </div>
+                <div class="col-md-2 col-xs-12">
+                  <p>
+                    <b>Heathrow Terminal 2 </b> <br />
+                    766 properties
+                  </p>
+                </div>
+
+                <div class="col-md-3 col-xs-12">
+                  <p>
+                    <b>Eiffel Tower </b> <br />
+                    766 properties
+                  </p>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                  <p>
+                    <b>State Park </b> <br />
+                    766 properties
+                  </p>
+                </div>
+                <div class="col-md-2 col-xs-12">
+                  <p>
+                    <b>Ocean City Boardwalk </b> <br />
+                    766 properties
+                  </p>
+                </div>
+                <div class="col-md-2 col-xs-12">
+                  <p>
+                    <b> Disneyland Paris </b> <br />
+                    766 properties
+                  </p>
+                </div>
+                <div class="col-md-2 col-xs-12">
+                  <p>
+                    <b>Guadalupe River Tubing </b> <br />
+                    766 properties
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <section class="last">
+        <div id="sec4-last-container">
+          <div class="container">
+            <h1>Save time, save money!</h1>
+            <p>Sign up and we'll send the best deals to you</p>
+            <input type="text" placeholder="Your Email" />
+
+            <button class="btn btn-primary">subscribe</button>
+          </div>
+          <input type="checkbox" /> Send me a link to get the FREE Booking.com
+          app!
+        </div>
+      </section>
+    </div>
+    <!-- ////////////////////////////////////////// -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!--Initialize Swiper-->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+    <script src="js/script1.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

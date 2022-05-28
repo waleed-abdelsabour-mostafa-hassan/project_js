@@ -1,0 +1,258 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  direction: ltr;
+}
+:root {
+  --mainBlueColor: #003580;
+  --secondcolor: #0071c2;
+}
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+header {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+#center-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-evenly;
+
+  padding: 5px;
+  top: 20px;
+  height: 60px;
+  width: 80%;
+  position: absolute;
+  /* border: 3px black solid; */
+}
+.whiteTxt-Center {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-family: "Monoton", cursive;
+  font-family: "Poppins", sans-serif;
+  font-family: "Radio Canada", sans-serif;
+  color: aliceblue;
+}
+#center-header #logo {
+  /* border: 3px rgb(139, 109, 109) solid; */
+  width: 27%;
+  font-size: 27px;
+}
+
+#center-header #icon3-container {
+  /* border: 3px rgb(233, 27, 27) solid; */
+  /* width: 27%; */
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+  align-content: center;
+  flex-wrap: nowrap;
+}
+#center-header #button3-container {
+  /* border: 3px solid rgb(127, 115, 115); */
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-end;
+  align-items: center;
+}
+#icon3-container #egy {
+  font-size: 20px;
+  display: flex;
+  font-weight: 400;
+
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.icon3-box {
+  display: flex;
+  height: 28px;
+  margin: 10px;
+  width: 28px;
+  cursor: pointer;
+
+  /* border: black 2px solid; */
+}
+#qus-mark {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  font-size: 20px;
+
+  font-weight: 300;
+  border: 2px white solid;
+  border-radius: 50%;
+}
+#us-flag img {
+  border-radius: 55%;
+}
+.btn3 {
+  display: flex;
+  background-color: #ffffff;
+  border: 2px white solid;
+  color: var(--secondcolor);
+  margin: 5px;
+  width: clac(fit-content + 3px);
+  padding: 0px 5px;
+  height: 80%;
+  border-radius: 1px;
+  font-weight: 500;
+  align-items: baseline;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  font-size: 14px;
+  cursor: pointer;
+}
+.btn3-email {
+  color: white;
+  /* box-sizing: content-box; */
+  cursor: default;
+  background-color: #ffffff00;
+}
+
+.btn3-email2 {
+  color: white;
+  /* box-sizing: content-box; */
+  height: 40px;
+  padding: 5px;
+  width: fit-content;
+  border: white 2px solid;
+  background-color: #ffffff00;
+}
+.btn3-header:hover {
+  border-radius: 60px !important;
+  height: 50px !important;
+  width: 170px !important;
+  /* border: #ffffff solid 1px !important; */
+  background-color: #1a4a8d !important;
+}
+.F-btn:hover {
+  width: 140px !important;
+}
+.taxi-btn:hover {
+  width: 187px !important;
+}
+
+#list-btn {
+  width: 140px;
+  color: rgba(255, 255, 255, 0.903);
+  background-color: #00358000;
+}
+#right-header {
+  display: flex;
+  width: 60%;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+/* //////////////////////////////// */
+#mainMenu-Container {
+  width: 85%;
+  height: 40px;
+  /* border: 1px solid wheat; */
+  position: relative;
+  top: 100px;
+  left: 15%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#center-MainMenu {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  /* color: rgba(255, 255, 255, 0); */
+
+  position: relative;
+  left: -30px;
+
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+}
+#center-MainMenu .btn3-header {
+  list-style: none;
+  display: inline-flex;
+  margin: 10px;
+  width: fit-content;
+  padding: 10px;
+  text-align: center;
+  /* text-transform: uppercase; */
+  /* line-height: 244%; */
+  height: 100%;
+  /* border-radius: 60px; */
+  border: 0px;
+  font-size: 18px;
+  align-items: center;
+  cursor: pointer;
+
+  color: #ffffff;
+  background-color: #00358000;
+}
+#center-MainMenu .btn3-header i {
+  outline: 0px;
+  padding: 10px;
+}
+#center-MainMenu il {
+  display: flex;
+}
+#Stays-btn {
+  border-radius: 60px !important;
+  height: 50px !important;
+  width: 118px !important;
+  border: #ffffff solid 1px !important;
+  background-color: #1a4a8d !important;
+}
+/* ////////////////////// */
+#title-description-container {
+  position: relative;
+  top: 145px;
+  left: 13%;
+  height: 48%;
+  /* border: #ffffff solid 1px !important; */
+  width: 80%;
+}
+.title-lifetime {
+  position: relative;
+  top: 0px;
+  left: 0%;
+  font-size: 50px;
+
+  padding: 12px 0px;
+}
+/* /////////////////////// */
+.description-rewarded {
+  font-weight: 400;
+  font-size: 25px;
+
+  max-width: 950px;
+  min-width: 805px;
+}
+/* /////////////////////////// */
+#siReg-btn {
+  margin: 30px 0px;
+  height: 51px;
+  width: 200px;
+  cursor: pointer;
+
+  background-color: #0071c2;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  border: 0;
+  border-radius: 2px;
+  font-family: "Monoton", cursive;
+  font-family: "Poppins", sans-serif;
+  font-family: "Radio Canada", sans-serif;
+}
+#siReg-btn:hover {
+  background-color: #00487a;
+}

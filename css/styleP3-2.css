@@ -1,0 +1,232 @@
+.pbtns {
+  margin-top: 2%;
+}
+.pbtns1 {
+  padding: 10px;
+  margin: 0;
+  width: fit-content;
+}
+
+section.choose img,
+section.choose div.part {
+  width: 48%;
+  float: left;
+}
+section.choose div.part p,
+section.choose div.part h2 {
+  margin: 0;
+}
+section.choose img {
+  margin-right: 3px;
+  position: relative;
+}
+section.choose div.price {
+  text-align: right;
+}
+section.choose div.price .numprice {
+  background-color: blue;
+  color: white;
+  width: 30px;
+  margin-left: 220px;
+  border-radius: 5px;
+  padding: 5px;
+}
+section.choose div.part .GV {
+  background-color: #ffb700;
+  text-align: center;
+  border-radius: 5px;
+  float: left;
+}
+
+section.choose .lastbtn {
+  text-align: center;
+  margin-top: 20px;
+}
+section.choose {
+  margin: 35px 0 !important;
+}
+#sec2w {
+  position: relative;
+  top: 200px;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(241, 241, 241, 1);
+}
+.column3M {
+  float: left;
+  width: 45%;
+  height: 35%;
+  padding: 0 10px;
+  margin-left: 30px;
+  margin-right: 35px;
+  padding-bottom: 20px;
+}
+.row3M {
+  margin: 0 -5px;
+}
+.row3M:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 400px) {
+  .column3M {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+.card {
+  height: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 0;
+  text-align: center;
+  background-color: #f1f1f1;
+  position: relative;
+  margin: 0 auto;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+  box-shadow: 2px 2px 12px rgba(47, 47, 47, 0.4);
+  opacity: 1;
+}
+.card .text {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  background: rgba(68, 68, 68, 0.52);
+  bottom: 50px;
+  color: #ffffff;
+}
+.card:hover {
+  transform: scale(1.07);
+  transition: all ease 0.3s;
+}
+.information {
+  text-transform: uppercase;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+/*A whole world of hotels*/
+.column1 {
+  float: left;
+  width: 40%;
+  height: 35%;
+  /*padding: 0 10px;*/
+  margin-left: 6%;
+  margin-right: 15px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.course-container {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 0;
+  text-align: center;
+  background-color: rgb(241, 241, 241, 1);
+  position: relative;
+  margin: 0 auto;
+  border: none;
+}
+.course {
+  background-color: rgb(252, 234, 234);
+  border-radius: 10px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  max-width: 100%;
+  margin: 20px;
+  overflow: hidden;
+  width: 700px;
+  height: 150px;
+}
+.course-preview {
+  background-color: #2a265f;
+  color: #fff;
+  padding: 30px;
+  max-width: 250px;
+  padding: 0;
+  transition: all ease-in-out 0.4s;
+}
+.course-preview img {
+  height: 100%;
+  width: 100%;
+}
+.course:hover .course-preview img {
+  transform: scale(1.25) rotate(2deg);
+}
+.course-preview a {
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  opacity: 0.6;
+  margin-top: 30px;
+  text-decoration: none;
+}
+.course-info {
+  padding: 30px;
+  position: relative;
+  width: 100%;
+}
+.progress-container {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  text-align: right;
+  width: 150px;
+}
+.progress::after {
+  border-radius: 3px;
+  background-color: #2a265f;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 66%;
+}
+.fa-star {
+  color: rgba(112, 111, 111, 0.856);
+}
+.fa-star:hover {
+  color: #e2334c;
+}
+.fa-star.selected {
+  color: #001628;
+}
+.p {
+  font-weight: bolder;
+  font-size: 30px;
+}
+h2 {
+  color: rgb(192, 6, 6);
+}
+.div3M {
+  border: 0.5rem outset rgb(240, 230, 140);
+  outline: 0.5rem solid khaki;
+  box-shadow: 0 0 0 2rem rgb(13, 45, 57);
+  border-radius: 12px;
+  font: bold 1rem sans-serif;
+  outline-offset: 0.5rem;
+  text-align: center;
+  width: 70%;
+  margin-left: 15%;
+}
+#sec3M {
+  position: relative;
+  top: 70px;
+}
+#sec4w {
+  position: relative;
+  top: 280px;
+}
+#sec4-last-container {
+  position: relative;
+  top: -105px;
+}

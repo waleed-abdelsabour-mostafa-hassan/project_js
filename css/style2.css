@@ -1,0 +1,116 @@
+section.choose {
+  width: 100%;
+  height: 230px;
+  margin: 80px 0;
+  padding: 40px 0;
+  /* border: 1px solid #000; */
+}
+section.choose img,
+section.choose div.part {
+  float: left;
+}
+section.choose div.part p,
+section.choose div.part h2 {
+  margin: 0;
+}
+section.choose img {
+  width: 15%; /* remove mr and remove br in text or use br without use width for every one*/
+  /*margin-right:6%;*/
+  position: relative;
+}
+section.choose div.part {
+  width: 85%;
+}
+section.choose div.part h2 {
+  font-size: 2em;
+  font-weight: bold;
+}
+section.choose div.part p {
+  margin-top: 1%;
+  font-size: 19px;
+}
+section.choose div.part .btns {
+  margin-top: 3%;
+  font-size: 19px;
+}
+section.choose div.part .btns button {
+  padding: 5px;
+  font-size: 19px;
+  color: blue;
+  background-color: white;
+}
+.active_btn {
+  background: #7cb62f !important ;
+}
+section.choose div.part .btns .btn1 {
+  border: 1px solid blue;
+}
+section.choose div.part .btns .btn1:hover {
+  background-color: lightblue;
+}
+section.choose div.part .btns .btn2 {
+  border: none;
+}
+section.choose div.part .btns .btn2:hover {
+  background-color: lightblue;
+}
+
+.sections {
+  margin-top: 4%;
+}
+
+.sections .buttons {
+  margin-bottom: 10px;
+}
+.sections .Content .content2,
+.sections .Content .content3 {
+  display: none;
+}
+.sections .Content p {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+section.last {
+  height: 400px;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  background: rgb(9, 9, 90);
+  text-align: center;
+  color: white;
+}
+section.last h1 {
+  font-size: 35px;
+  margin-top: 3%;
+  margin-bottom: 1%;
+  color: white;
+}
+section.last p {
+  color: #888;
+  margin-bottom: 1%;
+}
+section.last input[type="text"] {
+  display: block;
+  margin: auto;
+  padding: 15px;
+  border: 0;
+  width: 40%;
+  height: 50px;
+  outline: 0;
+  border-radius: 3px;
+}
+section.last input::-webkit-input-placeholder {
+  color: #aaa;
+}
+section.last button {
+  width: 15%;
+  height: 50px;
+  padding: 20px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  border-radius: 5%;
+  margin-top: 2%;
+  background: #0d0df7;
+  color: #fff;
+}

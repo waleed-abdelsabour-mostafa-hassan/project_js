@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/3ddfc50abb.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:ital,wght@0,700;0,800;0,900;1,600;1,700;1,800;1,900&family=Radio+Canada:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styleSignIn.css" />
+  </head>
+  <body>
+    <section class="container">
+      <div class="header">
+        <h1>Booking.com</h1>
+        <div class="icon3-box" id="us-flag">
+          <img src="img/usaFlag.png" alt="" />
+        </div>
+      </div>
+      <div id="container-noHerder">
+        <div class="sec1">
+          <div id="all"><h3 id="SC">Sign in or create an account</h3></div>
+          <div id="all" class="all-pass"><h3>Create password</h3></div>
+          <div id="conf">
+            Use a minimum of 6 characters, including uppercase letters,
+            lowercase letters, and numbers.
+          </div>
+        </div>
+        <div class="sec2">
+          <div id="container-formIN">
+            <form action="">
+              <label for="">Email address </label>
+              <input onfocus="cahngeStyle(this)" id="inpEm" type="email" />
+              <input
+                onclick="clickEmailForm()"
+                class="btn-SR"
+                value="Continue with email"
+                type="button"
+              />
+            </form>
+          </div>
+
+          <div id="password-container">
+            <form action="HomePage.html">
+              <label for="">Password </label>
+              <input id="inpPas1" onfocus="cahngeStyle(this)" type="password" />
+              <label for="">Confirm password</label>
+              <input id="inpPas2" onfocus="cahngeStyle(this)" type="password" />
+
+             <input
+                onclick="clickCreateForm()"
+                class="btn-SR"
+                value="Create an account"
+                type="submit"
+              /> <a href="HomePage.html" target="_blank"></a>
+            
+            </form>
+          </div>
+        </div>
+        <div class="sec3">
+          <div class="sec3-1">
+            <div class="ilne1"></div>
+            <div class="txt-line">or use one of these options</div>
+            <div class="ilne1"></div>
+          </div>
+          <div class="sec3-2">
+            <div class="sec3-2all">
+              <img class="icon" src="img/facebook.svg" alt="" />
+            </div>
+            <div class="sec3-2all">
+              <img class="icon" src="img/google.svg" alt="" />
+            </div>
+            <div class="sec3-2all">
+              <img class="icon" src="img/phone.png" alt="" />
+            </div>
+          </div>
+          <div class="sec3-3">More ways to sign in</div>
+        </div>
+        <div class="sec4">
+          <div class="ilne1 line2"></div>
+          <div class="containerOftEXT">
+            <p>
+              By signing in or creating an account, you agree with our
+              <a href="">Terms &</a>
+            </p>
+          </div>
+          <div class="containerOftEXT t2">
+            <a
+              href="https://www.booking.com/content/terms.en-us.html?aid=376381"
+              >Conditions </a
+            >and
+            <a
+              href="https://www.booking.com/content/privacy.en-us.html?aid=376381"
+            >
+              Privacy Statement</a
+            >
+          </div>
+        </div>
+        <div class="sec5"></div>
+        <div class="ilne1 line3"></div>
+        <div class="containerOftEXT t3"><p>All rights reserved.</p></div>
+        <div class="containerOftEXT t4">
+          <p>Copyright (2006-2022) – Booking.com™</p>
+        </div>
+      </div>
+    </section>
+    <script src="js/scriptSignIN.js"></script>
+  </body>
+</html>

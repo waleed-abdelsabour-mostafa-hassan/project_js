@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/3ddfc50abb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/vendors/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/vendors/font-awesome.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:ital,wght@0,700;0,800;0,900;1,600;1,700;1,800;1,900&family=Radio+Canada:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style2.css" />
+    <link rel="stylesheet" href="css/vendors/slick.css" />
+    <link rel="stylesheet" href="css/styleForm.css" />
+    <link rel="stylesheet" href="css/styleHeader.css" />
+    <link rel="stylesheet" href="css/styleP3.css" />
+    <link rel="stylesheet" href="css/styleP3-2.css" />
+
+    <style></style>
+  </head>
+  <body>
+    <section>
+      <header id="img-headerP3">
+        <div id="center-header">
+          <div class="whiteTxt-Center" id="logo">Booking.com</div>
+          <div id="right-header">
+            <div class="whiteTxt-Center" id="icon3-container">
+              <div class="icon3-box" id="qus-mark">?</div>
+              <div class="icon3-box" id="us-flag">
+                <img src="img/usaFlag.png" alt="" />
+              </div>
+
+              <div class="icon3-box" id="egy">EGP</div>
+            </div>
+            <div id="button3-container">
+              <input
+                type="button"
+                class="whiteTxt-Center btn3"
+                id="list-btn"
+                value="List your property"
+              />
+              <input
+                type="button"
+                id="btn3-email2"
+                class="whiteTxt-Center btn3 btn3-email2"
+                value="Hello"
+              />
+              <input
+                onclick="ClickSignOut()"
+                type="button"
+                class="whiteTxt-Center btn3"
+                value="Sign out"
+              />
+            </div>
+          </div>
+        </div>
+        <div id="mainMenu-Container">
+          <ul id="center-MainMenu">
+            <button id="Stays-btn" class="whiteTxt-Center btn3-header">
+              <img class="icon bedIcon" src="img/bed.png" alt="" /> Stays
+            </button>
+            <button class="whiteTxt-Center F-btn btn3-header">
+              <i class="fa-solid fa-plane-departure"></i> Flights
+            </button>
+            <button class="whiteTxt-Center btn3-header">
+              <i class="fa-solid fa-car"></i> Car rentals
+            </button>
+            <button class="whiteTxt-Center btn3-header">
+              <img class="icon atterIcon" src="img/atter.png" alt="" />
+              Attractions
+            </button>
+            <button class="whiteTxt-Center taxi-btn btn3-header">
+              <img class="icon atterIcon" src="img/taxi.png" alt="" />
+              Airport taxis
+            </button>
+          </ul>
+        </div>
+      </header>
+
+      <div id="form-ContainerP3">
+        <div class="text-containerP3">
+          <div id="textFind">Find the perfect hotel on Booking.com</div>
+          <div id="textFeomB">
+            From budget hotels to luxury rooms and everything in between
+          </div>
+        </div>
+
+        <div id="center-formContainer">
+          <div id="form-container">
+            <input
+              onclick="onSearchPage3()"
+              class="serh-btn"
+              type="button"
+              value="Search"
+            />
+            <div class="dropdown">
+              <button onclick="showGovernment()" class="dropbtn">
+                Where are you going ?
+              </button>
+              <div onmouseleave="hideGovernment()" class="dropdown-content">
+                <a
+                  onclick="getGvernment(this)"
+                  class="l1"
+                  id="aText-DropDown"
+                  href="#"
+                  ><img
+                    class="icon"
+                    src="img/location-dot-solid.svg"
+                    alt=""
+                  />Hurghada</a
+                >
+                <a onclick="getGvernment(this)" id="aText-DropDown" href="#">
+                  <img
+                    class="icon"
+                    src="img/location-dot-solid.svg"
+                  />Alexandria</a
+                >
+                <a
+                  onclick="getGvernment(this)"
+                  class="l3"
+                  id="aText-DropDown"
+                  href="#"
+                  ><img class="icon" src="img/location-dot-solid.svg" />Dahab</a
+                ><a
+                  onclick="getGvernment(this)"
+                  class="l4"
+                  id="aText-DropDown"
+                  href="#"
+                  ><img class="icon" src="img/location-dot-solid.svg" />Sharm
+                  El-Shaikh</a
+                ><a
+                  onclick="getGvernment(this)"
+                  class="l5"
+                  id="aText-DropDown"
+                  href="#"
+                  ><img class="icon" src="img/location-dot-solid.svg" />Ain
+                  Sokhna</a
+                ><a
+                  onclick="getGvernment(this)"
+                  class="l6"
+                  id="aText-DropDown"
+                  href="#"
+                  ><img class="icon" src="img/location-dot-solid.svg" />Cairo</a
+                >
+              </div>
+            </div>
+
+            <input name="check-out" class="date date1" type="date" />
+            <label class="check" for="check-out">check out :</label>
+
+            <input name="check-in" class="date" type="date" />
+            <label class="check" for="check-in">check in :</label>
+
+            <button onclick="personnumON()" class="personNum-btn">
+              1 Adult . 1 Chaild . 1 Room
+            </button>
+            <!-- ----------- -->
+            <div onmouseleave="personnumOUT()" class="container-numberPR">
+              <div class="row-numPR">
+                <p>Adult</p>
+                <button onclick="minusForAdult()" class="btn-numPR">-</button>
+                <p class="textAdult">1</p>
+
+                <button onclick="plusForAdult()" class="btn-numPR">+</button>
+              </div>
+              <!-- ------------------------------------------------- -->
+              <div class="row-numPR">
+                <div>
+                  <div id="p-PR">Chaild</div>
+                  <div id="pp-PR">Ages 0-17</div>
+                </div>
+                <!-- //// -->
+                <button onclick="minusForChaild()" class="btn-numPR">-</button>
+                <p class="textChaild">1</p>
+                <button onclick="plusForChaild()" class="btn-numPR">+</button>
+                <!-- //// -->
+              </div>
+              <!-- ------------------------------------------------- -->
+
+              <div class="row-numPR">
+                <p>Room</p>
+                <!-- //// -->
+
+                <button onclick="minusForRoom()" class="btn-numPR">-</button>
+                <p class="textRoom">1</p>
+                <button onclick="plusForRoom()" class="btn-numPR">+</button>
+                <!-- //// -->
+              </div>
+              <!-- ------------------------------------------------- -->
+            </div>
+          </div>
+        </div>
+        <div class="text-containerP3" id="chechBoxContainer">
+          <input type="checkbox" name="work" id="checkP3" />
+          <label for="work">I'm traveling for work</label>
+        </div>
+      </div>
+    </section>
+    <div id="sec2w">
+      <section class="sections">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-xs-12">
+              <h2 class="section_title">Last-minute hotels near you</h2>
+              <p id="decriptionPrice">
+                Find a great deal on a hotel for tonight or an upcoming trip
+              </p>
+            </div>
+            <div class="col-md-2 col-xs-12 pbtns"></div>
+            <div class="col-md-4 col-xs-12 pbtns">
+              <button
+                class="btn btn-primary pbtns1"
+                id="btnone"
+                onclick="changeText('For Tonight')"
+              >
+                Hotels For Tonight
+              </button>
+              <button
+                class="btn btn-default pbtns1"
+                id="btntwo"
+                onclick="changeText('For Weekend')"
+              >
+                Hotels For this weekend
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="choose">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-xs-12">
+              <img src="img/img1.PNG" alt="" />
+              <div class="part">
+                <h5><b>Miss Egypt Hotel Assiut</b></h5>
+                <p>Al Hamra</p>
+                <p class="GV">Great Value</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-12">
+              <div class="price">
+                <p class="numprice">9.6</p>
+                <p>From</p>
+                <h3 id="hot1">EGP 1,645</h3>
+                <b class="txttonight"></b>
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-12">
+              <img src="img/img2.PNG" alt="" />
+              <div class="part">
+                <h5><b>Jewel Assiut Hotel</b></h5>
+                <p>Asyut</p>
+                <p class="GV">Great Value</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-12">
+              <div class="price">
+                <p class="numprice">9.0</p>
+                <p>From</p>
+                <h3 id="hot2">EGP 1,645</h3>
+                <b class="txttonight"></b>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="row">
+            <div class="col-md-3 col-xs-12">
+              <img src="img/img3.PNG" alt="" />
+              <div class="part">
+                <h5><b>Magic Pyramids INN</b></h5>
+                <p>Giza, Cairo</p>
+                <p class="GV">Great Value</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-12">
+              <div class="price">
+                <p class="numprice">8.8</p>
+                <p>From</p>
+                <h3 id="hot3">EGP 320</h3>
+                <b class="txttonight"></b>
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-12">
+              <img src="img/img4.PNG" alt="" />
+              <div class="part">
+                <h5><b>The Museum Boutique</b></h5>
+                <p>Giza, Cairo</p>
+                <p class="GV">Great Value</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-12">
+              <div class="price">
+                <p class="numprice">8.7</p>
+                <p>From</p>
+                <h3 id="hot4">EGP 872</h3>
+                <b class="txttonight"></b>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="row">
+            <div class="col-md-3 col-xs-12">
+              <img src="img/img5.PNG" alt="" />
+              <div class="part">
+                <h5><b>Pyramids Hills Inn</b></h5>
+                <p>Giza, Cairo</p>
+                <p class="GV">Great Value</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-12">
+              <div class="price">
+                <p class="numprice">8.7</p>
+                <p>From</p>
+                <h3 id="hot5">EGP 336</h3>
+                <b class="txttonight"></b>
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-12">
+              <img src="img/img6.PNG" alt="" />
+              <div class="part">
+                <h5><b>Nile Boutique Hotel at Nile Plaza</b></h5>
+                <p>Cairo</p>
+                <p class="GV">Great Value</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-12">
+              <div class="price">
+                <p class="numprice">8.5</p>
+                <p>From</p>
+                <h3 id="hot6">EGP 1,188</h3>
+                <b class="txttonight"></b>
+              </div>
+            </div>
+          </div>
+
+          <div class="lastbtn">
+            <button class="btn btn-primary">See More Last-Minute Hotels</button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br />
+    <div class="information">
+      <h2>Inspiration for finding your ideal hotel</h2>
+      <p>Discover special hotels in unique destinations all over the world.</p>
+    </div>
+
+    <div id="sec3M">
+      <div class="row3M">
+        <div class="column3M">
+          <div class="card">
+            <img src="img/plant hotel.jfif" />
+            <div class="text">
+              <h3>7 chateau hotels in Egypt’s vineyards</h3>
+              <p>Read more...</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column3M">
+          <div class="card">
+            <img src="img/library.jpeg" />
+            <div class="text">
+              <h3>5 of the Egypt’s quirkiest library hotels</h3>
+              <p>Read more...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row3M">
+        <div class="column3M">
+          <div class="card">
+            <img src="img/Female-chef-plating.jpg" />
+            <div class="text">
+              <h3>2 The best Michelin-starred hotel restaurants</h3>
+              <p>Read more...</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column3M">
+          <div class="card">
+            <img src="img/snow hotel.jpg" />
+            <div class="text">
+              <h3>5 snow hotels to visit this winter</h3>
+              <p>Read more...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row3M">
+        <div class="column3M">
+          <div class="card">
+            <img src="img/hotels1.jfif" class="hover-shadow cursor" />
+            <div class="text">
+              <h3>3 The Best Nerdy Hotels for a Romantic Weekend</h3>
+              <p>Read more...</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column3M">
+          <div class="card">
+            <img src="img/Fhotels.webp" />
+            <div class="text">
+              <h3>The Egypt’s 7 Most Eye-Catching Minimalist Hotels</h3>
+              <p>Read more...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <!-------------------------A whole world of hotels----------------------------------------->
+
+      <div class="div3M">
+        <h1>A whole world of hotels</h1>
+        <h3>
+          Book the perfect room in the best hotel, wherever you're heading
+        </h3>
+      </div>
+      <br /><br /><br />
+
+      <div class="row3M">
+        <div class="column1">
+          <div class="courses-container">
+            <div class="p">Popular cities</div>
+            <div class="course">
+              <div class="course-preview">
+                <img src="img/cairo1.jfif" />
+              </div>
+              <div class="course-info">
+                <div class="progress-container"></div>
+                <h2>Hotels in Cairo, Egypt</h2>
+                <h5>1428 hotels</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column1">
+          <div class="p">Popular Hotels</div>
+          <div class="courses-container">
+            <div class="course">
+              <div class="course-preview">
+                <img src="img/waterH.jfif" />
+              </div>
+              <div class="course-info">
+                <div class="progress-container">
+                  <input type="hidden" id="rating" name="rating" value="-1" />
+                  <div class="rating">
+                    <i class="ratings_stars fa fa-star" data-rating="1"></i>
+                    <i class="ratings_stars fa fa-star" data-rating="2"></i>
+                    <i class="ratings_stars fa fa-star" data-rating="3"></i>
+                    <i class="ratings_stars fa fa-star" data-rating="4"></i>
+                    <i class="ratings_stars fa fa-star" data-rating="5"></i>
+                  </div>
+                </div>
+                <h2>Blue Waters Hotel</h2>
+                <h5>500 hotels</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <div class="row3M">
+        <div class="column1">
+          <div class="courses-container">
+            <div class="course">
+              <div class="course-preview">
+                <img src="img/Hurghada1.jfif" />
+              </div>
+              <div class="course-info">
+                <div class="progress-container"></div>
+                <h2>Hotels in Hurghada</h2>
+                <h5>2000 hotels</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column1">
+          <div class="courses-container">
+            <div class="course">
+              <div class="course-preview">
+                <img src="img/Hôtel Racine.jfif" />
+              </div>
+              <div class="course-info">
+                <div class="progress-container">
+                  <input type="hidden" id="rating" name="rating" value="-1" />
+                  <div class="rating">
+                    <i class="ratings_stars fa fa-star" data-rating="1"></i>
+                    <i class="ratings_stars fa fa-star" data-rating="2"></i>
+                    <i class="ratings_stars fa fa-star" data-rating="3"></i>
+                    <i class="ratings_stars fa fa-star" data-rating="4"></i>
+                    <i class="ratings_stars fa fa-star" data-rating="5"></i>
+                  </div>
+                </div>
+                <h2>Hôtel Racine</h2>
+                <h5>1000 hotels</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br />
+
+      <div class="row3M">
+        <div class="column1">
+          <div class="courses-container">
+            <div class="course">
+              <div class="course-preview">
+                <img src="img/Alex1.jfif" />
+              </div>
+              <div class="course-info">
+                <div class="progress-container"></div>
+                <h2>Hotels in Alexandria</h2>
+                <h5>1000 hotels</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column1">
+          <div class="courses-container">
+            <div class="course">
+              <div class="course-preview">
+                <img src="img/Antonio Garden Hotel.jfif" />
+              </div>
+              <div class="course-info">
+                <div class="progress-container">
+                  <input type="hidden" id="rating" name="rating" value="-1" />
+                  <div class="rating">
+                    <i class="ratings_stars fa fa-star" data-rating="1"></i>
+                    <i class="ratings_stars fa fa-star" data-rating="2"></i>
+                    <i class="ratings_stars fa fa-star" data-rating="3"></i>
+                    <i class="ratings_stars fa fa-star" data-rating="4"></i>
+                    <i class="ratings_stars fa fa-star" data-rating="5"></i>
+                  </div>
+                </div>
+                <h2>Hotels in Cairo, Egypt</h2>
+                <h5>400 hotels</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br />
+
+      <div class="row3M">
+        <div class="column1">
+          <div class="courses-container">
+            <div class="course">
+              <div class="course-preview">
+                <img src="img/D1.jfif" />
+              </div>
+              <div class="course-info">
+                <div class="progress-container"></div>
+                <h2>Hotels in Dahab</h2>
+                <h5>900 hotels</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column1">
+          <div class="courses-container">
+            <div class="course">
+              <div class="course-preview">
+                <img src="img/TheCastle Hotel.jfif" />
+              </div>
+              <div class="course-info">
+                <div class="progress-container">
+                  <input type="hidden" id="rating" name="rating" value="-1" />
+                  <div class="rating">
+                    <i class="ratings_stars fa fa-star" data-rating="1"></i>
+                    <i class="ratings_stars fa fa-star" data-rating="2"></i>
+                    <i class="ratings_stars fa fa-star" data-rating="3"></i>
+                    <i class="ratings_stars fa fa-star" data-rating="4"></i>
+                    <i class="ratings_stars fa fa-star" data-rating="5"></i>
+                  </div>
+                </div>
+                <h2>Castle Hotel</h2>
+                <h5>400 hotels</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="sec4w">
+      <section class="last">
+        <div id="sec4-last-container">
+          <div class="container">
+            <h1>Save time, save money!</h1>
+            <p>Sign up and we'll send the best deals to you</p>
+            <input type="text" placeholder="Your Email" />
+
+            <button class="btn btn-primary">subscribe</button>
+          </div>
+          <input type="checkbox" /> Send me a link to get the FREE Booking.com
+          app!
+        </div>
+      </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/script2.js"></script>
+    <script src="js/script1.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
